@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BECBFC31DA3383B00325CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFC21DA3383B00325CDD /* main.m */; };
+		6BECBFDC1DA3383B00325CDD /* TickTockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFDB1DA3383B00325CDD /* TickTockTests.m */; };
+		6BECBFE81DA338C400325CDD /* TickTock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFE71DA338C400325CDD /* TickTock.m */; };
+		6BECBFEB1DA33DCC00325CDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BECBFD81DA3383B00325CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BECBFB61DA3383B00325CDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BECBFBD1DA3383B00325CDD;
+			remoteInfo = TickTock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BECBFBE1DA3383B00325CDD /* TickTock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BECBFC21DA3383B00325CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BECBFD21DA3383B00325CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BECBFDB1DA3383B00325CDD /* TickTockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickTockTests.m; sourceTree = "<group>"; };
+		6BECBFDD1DA3383B00325CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BECBFE61DA338C400325CDD /* TickTock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickTock.h; sourceTree = "<group>"; };
+		6BECBFE71DA338C400325CDD /* TickTock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickTock.m; sourceTree = "<group>"; };
+		6BECBFE91DA33DCC00325CDD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BECBFBB1DA3383B00325CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BECBFD41DA3383B00325CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BECBFB51DA3383B00325CDD = {
+			isa = PBXGroup;
+			children = (
+				6BECBFC01DA3383B00325CDD /* TickTock */,
+				6BECBFDA1DA3383B00325CDD /* TickTockTests */,
+				6BECBFBF1DA3383B00325CDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BECBFBF1DA3383B00325CDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BECBFBE1DA3383B00325CDD /* TickTock.app */,
+				6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BECBFC01DA3383B00325CDD /* TickTock */ = {
+			isa = PBXGroup;
+			children = (
+				6BECBFE91DA33DCC00325CDD /* AppDelegate.h */,
+				6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */,
+				6BECBFD21DA3383B00325CDD /* Info.plist */,
+				6BECBFC11DA3383B00325CDD /* Supporting Files */,
+				6BECBFE61DA338C400325CDD /* TickTock.h */,
+				6BECBFE71DA338C400325CDD /* TickTock.m */,
+			);
+			path = TickTock;
+			sourceTree = "<group>";
+		};
+		6BECBFC11DA3383B00325CDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BECBFC21DA3383B00325CDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BECBFDA1DA3383B00325CDD /* TickTockTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BECBFDB1DA3383B00325CDD /* TickTockTests.m */,
+				6BECBFDD1DA3383B00325CDD /* Info.plist */,
+			);
+			path = TickTockTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BECBFBD1DA3383B00325CDD /* TickTock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTock" */;
+			buildPhases = (
+				6BECBFBA1DA3383B00325CDD /* Sources */,
+				6BECBFBB1DA3383B00325CDD /* Frameworks */,
+				6BECBFBC1DA3383B00325CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickTock;
+			productName = TickTock;
+			productReference = 6BECBFBE1DA3383B00325CDD /* TickTock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BECBFD61DA3383B00325CDD /* TickTockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTockTests" */;
+			buildPhases = (
+				6BECBFD31DA3383B00325CDD /* Sources */,
+				6BECBFD41DA3383B00325CDD /* Frameworks */,
+				6BECBFD51DA3383B00325CDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BECBFD91DA3383B00325CDD /* PBXTargetDependency */,
+			);
+			name = TickTockTests;
+			productName = TickTockTests;
+			productReference = 6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BECBFB61DA3383B00325CDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = daniellarsson;
+				TargetAttributes = {
+					6BECBFBD1DA3383B00325CDD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F383ZUKXAC;
+						ProvisioningStyle = Automatic;
+					};
+					6BECBFD61DA3383B00325CDD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F383ZUKXAC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BECBFBD1DA3383B00325CDD;
+					};
+				};
+			};
+			buildConfigurationList = 6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "TickTock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BECBFB51DA3383B00325CDD;
+			productRefGroup = 6BECBFBF1DA3383B00325CDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BECBFBD1DA3383B00325CDD /* TickTock */,
+				6BECBFD61DA3383B00325CDD /* TickTockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BECBFBC1DA3383B00325CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BECBFD51DA3383B00325CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BECBFBA1DA3383B00325CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BECBFC31DA3383B00325CDD /* main.m in Sources */,
+				6BECBFE81DA338C400325CDD /* TickTock.m in Sources */,
+				6BECBFEB1DA33DCC00325CDD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BECBFD31DA3383B00325CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BECBFDC1DA3383B00325CDD /* TickTockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BECBFD91DA3383B00325CDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BECBFBD1DA3383B00325CDD /* TickTock */;
+			targetProxy = 6BECBFD81DA3383B00325CDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6BECBFDE1DA3383B00325CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BECBFDF1DA3383B00325CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BECBFE11DA3383B00325CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F383ZUKXAC;
+				INFOPLIST_FILE = TickTock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BECBFE21DA3383B00325CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F383ZUKXAC;
+				INFOPLIST_FILE = TickTock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BECBFE41DA3383B00325CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F383ZUKXAC;
+				INFOPLIST_FILE = TickTockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTock.app/TickTock";
+			};
+			name = Debug;
+		};
+		6BECBFE51DA3383B00325CDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F383ZUKXAC;
+				INFOPLIST_FILE = TickTockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTock.app/TickTock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "TickTock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BECBFDE1DA3383B00325CDD /* Debug */,
+				6BECBFDF1DA3383B00325CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BECBFE11DA3383B00325CDD /* Debug */,
+				6BECBFE21DA3383B00325CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BECBFE41DA3383B00325CDD /* Debug */,
+				6BECBFE51DA3383B00325CDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BECBFB61DA3383B00325CDD /* Project object */;
+}

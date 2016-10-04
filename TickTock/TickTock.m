@@ -37,10 +37,11 @@
 + (void)tock:(NSString *)operation
 {
     // Operation has finished
+    NSDate *currentTime = [NSDate date];
     NSDate *startTime = [[[self sharedTickTock] activeOperations] objectForKey:operation];
     if (startTime)
     {
-        double timePassed = -[startTime timeIntervalSinceNow] * 1000;
+        double timePassed = [currentTime timeIntervalSinceDate:startTime] * 1000;
         NSLog(@"%@ finished in %@", operation, [[self sharedTickTock] printableTime:timePassed]);
         [[[self sharedTickTock] activeOperations] removeObjectForKey:operation];
     }

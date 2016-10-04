@@ -1,49 +1,49 @@
 //
-//  TickTock.m
-//  TickTock
+//  Chrono.m
+//  Chrono
 //
 //  Created by Daniel Larsson on 03/10/2016.
 //  Copyright © 2016 daniellarsson. All rights reserved.
 //
 
-#import "TickTock.h"
+#import "Chrono.h"
 
-@interface TickTock ()
+@interface Chrono ()
 
 @property (nonatomic) NSMutableDictionary *activeOperations;
 
 @end
 
-@implementation TickTock
+@implementation Chrono
 
-+ (TickTock *)sharedTickTock
++ (Chrono *)sharedChrono
 {
     static dispatch_once_t once;
 
-    static TickTock *sharedTickTock;
+    static Chrono *sharedChrono;
 
-    dispatch_once(&once, ^{ sharedTickTock = [[TickTock alloc] init]; });
+    dispatch_once(&once, ^{ sharedChrono = [[Chrono alloc] init]; });
 
-    return sharedTickTock;
+    return sharedChrono;
 }
 
-+ (void)tick:(NSString *)operation
++ (void)start:(NSString *)operation
 {
     // Operation began
     if (operation)
-        [[[self sharedTickTock] activeOperations] setObject:[NSDate date] forKey:operation];
+        [[[self sharedChrono] activeOperations] setObject:[NSDate date] forKey:operation];
 }
 
-+ (void)tock:(NSString *)operation
++ (void)stop:(NSString *)operation
 {
     // Operation has finished
     NSDate *currentTime = [NSDate date];
-    NSDate *startTime = [[[self sharedTickTock] activeOperations] objectForKey:operation];
+    NSDate *startTime = [[[self sharedChrono] activeOperations] objectForKey:operation];
     if (startTime)
     {
         double timePassed = [currentTime timeIntervalSinceDate:startTime] * 1000;
-        NSLog(@"%@ finished in %@", operation, [[self sharedTickTock] printableTime:timePassed]);
-        [[[self sharedTickTock] activeOperations] removeObjectForKey:operation];
+        NSLog(@"%@ finished in %@", operation, [[self sharedChrono] printableTime:timePassed]);
+        [[[self sharedChrono] activeOperations] removeObjectForKey:operation];
     }
     else
     {

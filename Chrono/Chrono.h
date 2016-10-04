@@ -1,6 +1,6 @@
 //
-//  TickTock.h
-//  TickTock
+//  Chrono.h
+//  Chrono
 //
 //  Created by Daniel Larsson on 03/10/2016.
 //  Copyright © 2016 daniellarsson. All rights reserved.
@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TickTock : NSObject
+@interface Chrono : NSObject
 
-+ (void)tick:(NSString *)operation;
++ (void)start:(NSString *)operation;
 
-+ (void)tock:(NSString *)operation;
++ (void)stop:(NSString *)operation;
 
 @end

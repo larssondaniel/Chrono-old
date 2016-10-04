@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BECBFC31DA3383B00325CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFC21DA3383B00325CDD /* main.m */; };
-		6BECBFDC1DA3383B00325CDD /* TickTockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFDB1DA3383B00325CDD /* TickTockTests.m */; };
-		6BECBFE81DA338C400325CDD /* TickTock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFE71DA338C400325CDD /* TickTock.m */; };
-		6BECBFEB1DA33DCC00325CDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */; };
+		6BEC58161DA46EF100325CDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC58111DA46EEB00325CDD /* AppDelegate.m */; };
+		6BEC58171DA46EF100325CDD /* Chrono.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC58131DA46EEE00325CDD /* Chrono.m */; };
+		6BEC58181DA46EF100325CDD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BEC58141DA46EEF00325CDD /* Info.plist */; };
+		6BEC58191DA46EF100325CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC58151DA46EF000325CDD /* main.m */; };
+		6BEC581D1DA4720E00325CDD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BEC581B1DA4720E00325CDD /* Info.plist */; };
+		6BEC581E1DA4728200325CDD /* ChronoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC581A1DA4720E00325CDD /* ChronoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,16 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6BECBFBE1DA3383B00325CDD /* TickTock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickTock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BECBFC21DA3383B00325CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6BECBFD21DA3383B00325CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickTockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BECBFDB1DA3383B00325CDD /* TickTockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickTockTests.m; sourceTree = "<group>"; };
-		6BECBFDD1DA3383B00325CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BECBFE61DA338C400325CDD /* TickTock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickTock.h; sourceTree = "<group>"; };
-		6BECBFE71DA338C400325CDD /* TickTock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickTock.m; sourceTree = "<group>"; };
-		6BECBFE91DA33DCC00325CDD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6BEC58101DA46EEA00325CDD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Chrono/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		6BEC58111DA46EEB00325CDD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Chrono/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		6BEC58121DA46EED00325CDD /* Chrono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chrono.h; path = Chrono/Chrono.h; sourceTree = SOURCE_ROOT; };
+		6BEC58131DA46EEE00325CDD /* Chrono.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chrono.m; path = Chrono/Chrono.m; sourceTree = SOURCE_ROOT; };
+		6BEC58141DA46EEF00325CDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Chrono/Info.plist; sourceTree = SOURCE_ROOT; };
+		6BEC58151DA46EF000325CDD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Chrono/main.m; sourceTree = SOURCE_ROOT; };
+		6BEC581A1DA4720E00325CDD /* ChronoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChronoTests.m; path = ChronoTests/ChronoTests.m; sourceTree = SOURCE_ROOT; };
+		6BEC581B1DA4720E00325CDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ChronoTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		6BECBFBE1DA3383B00325CDD /* Chrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BECBFD71DA3383B00325CDD /* ChronoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,8 @@
 		6BECBFB51DA3383B00325CDD = {
 			isa = PBXGroup;
 			children = (
-				6BECBFC01DA3383B00325CDD /* TickTock */,
-				6BECBFDA1DA3383B00325CDD /* TickTockTests */,
+				6BECBFC01DA3383B00325CDD /* Chrono */,
+				6BECBFDA1DA3383B00325CDD /* ChronoTests */,
 				6BECBFBF1DA3383B00325CDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,48 +68,50 @@
 		6BECBFBF1DA3383B00325CDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BECBFBE1DA3383B00325CDD /* TickTock.app */,
-				6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */,
+				6BECBFBE1DA3383B00325CDD /* Chrono.app */,
+				6BECBFD71DA3383B00325CDD /* ChronoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6BECBFC01DA3383B00325CDD /* TickTock */ = {
+		6BECBFC01DA3383B00325CDD /* Chrono */ = {
 			isa = PBXGroup;
 			children = (
-				6BECBFE91DA33DCC00325CDD /* AppDelegate.h */,
-				6BECBFEA1DA33DCC00325CDD /* AppDelegate.m */,
-				6BECBFD21DA3383B00325CDD /* Info.plist */,
+				6BEC58101DA46EEA00325CDD /* AppDelegate.h */,
+				6BEC58111DA46EEB00325CDD /* AppDelegate.m */,
+				6BEC58121DA46EED00325CDD /* Chrono.h */,
+				6BEC58131DA46EEE00325CDD /* Chrono.m */,
+				6BEC58141DA46EEF00325CDD /* Info.plist */,
 				6BECBFC11DA3383B00325CDD /* Supporting Files */,
-				6BECBFE61DA338C400325CDD /* TickTock.h */,
-				6BECBFE71DA338C400325CDD /* TickTock.m */,
 			);
+			name = Chrono;
 			path = TickTock;
 			sourceTree = "<group>";
 		};
 		6BECBFC11DA3383B00325CDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6BECBFC21DA3383B00325CDD /* main.m */,
+				6BEC58151DA46EF000325CDD /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6BECBFDA1DA3383B00325CDD /* TickTockTests */ = {
+		6BECBFDA1DA3383B00325CDD /* ChronoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6BECBFDB1DA3383B00325CDD /* TickTockTests.m */,
-				6BECBFDD1DA3383B00325CDD /* Info.plist */,
+				6BEC581A1DA4720E00325CDD /* ChronoTests.m */,
+				6BEC581B1DA4720E00325CDD /* Info.plist */,
 			);
+			name = ChronoTests;
 			path = TickTockTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6BECBFBD1DA3383B00325CDD /* TickTock */ = {
+		6BECBFBD1DA3383B00325CDD /* Chrono */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTock" */;
+			buildConfigurationList = 6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "Chrono" */;
 			buildPhases = (
 				6BECBFBA1DA3383B00325CDD /* Sources */,
 				6BECBFBB1DA3383B00325CDD /* Frameworks */,
@@ -117,14 +121,14 @@
 			);
 			dependencies = (
 			);
-			name = TickTock;
+			name = Chrono;
 			productName = TickTock;
-			productReference = 6BECBFBE1DA3383B00325CDD /* TickTock.app */;
+			productReference = 6BECBFBE1DA3383B00325CDD /* Chrono.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6BECBFD61DA3383B00325CDD /* TickTockTests */ = {
+		6BECBFD61DA3383B00325CDD /* ChronoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTockTests" */;
+			buildConfigurationList = 6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "ChronoTests" */;
 			buildPhases = (
 				6BECBFD31DA3383B00325CDD /* Sources */,
 				6BECBFD41DA3383B00325CDD /* Frameworks */,
@@ -135,9 +139,9 @@
 			dependencies = (
 				6BECBFD91DA3383B00325CDD /* PBXTargetDependency */,
 			);
-			name = TickTockTests;
+			name = ChronoTests;
 			productName = TickTockTests;
-			productReference = 6BECBFD71DA3383B00325CDD /* TickTockTests.xctest */;
+			productReference = 6BECBFD71DA3383B00325CDD /* ChronoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,21 +166,30 @@
 					};
 				};
 			};
-			buildConfigurationList = 6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "TickTock" */;
+			buildConfigurationList = 6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "Chrono" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
+				es,
+				it,
+				pt,
+				"sv-SE",
+				tr,
+				English,
+				ru,
 			);
 			mainGroup = 6BECBFB51DA3383B00325CDD;
 			productRefGroup = 6BECBFBF1DA3383B00325CDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6BECBFBD1DA3383B00325CDD /* TickTock */,
-				6BECBFD61DA3383B00325CDD /* TickTockTests */,
+				6BECBFBD1DA3383B00325CDD /* Chrono */,
+				6BECBFD61DA3383B00325CDD /* ChronoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEC581D1DA4720E00325CDD /* Info.plist in Resources */,
+				6BEC58181DA46EF100325CDD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,9 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BECBFC31DA3383B00325CDD /* main.m in Sources */,
-				6BECBFE81DA338C400325CDD /* TickTock.m in Sources */,
-				6BECBFEB1DA33DCC00325CDD /* AppDelegate.m in Sources */,
+				6BEC58171DA46EF100325CDD /* Chrono.m in Sources */,
+				6BEC58191DA46EF100325CDD /* main.m in Sources */,
+				6BEC58161DA46EF100325CDD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BECBFDC1DA3383B00325CDD /* TickTockTests.m in Sources */,
+				6BEC581E1DA4728200325CDD /* ChronoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		6BECBFD91DA3383B00325CDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6BECBFBD1DA3383B00325CDD /* TickTock */;
+			target = 6BECBFBD1DA3383B00325CDD /* Chrono */;
 			targetProxy = 6BECBFD81DA3383B00325CDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -322,9 +337,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = F383ZUKXAC;
-				INFOPLIST_FILE = TickTock/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chrono/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.Chrono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -333,9 +348,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = F383ZUKXAC;
-				INFOPLIST_FILE = TickTock/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chrono/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.Chrono;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -345,11 +360,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F383ZUKXAC;
-				INFOPLIST_FILE = TickTockTests/Info.plist;
+				INFOPLIST_FILE = ChronoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTockTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.ChronoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTock.app/TickTock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chrono.app/Chrono";
 			};
 			name = Debug;
 		};
@@ -358,18 +373,18 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = F383ZUKXAC;
-				INFOPLIST_FILE = TickTockTests/Info.plist;
+				INFOPLIST_FILE = ChronoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.TickTockTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daniellarsson.ChronoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickTock.app/TickTock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chrono.app/Chrono";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "TickTock" */ = {
+		6BECBFB91DA3383B00325CDD /* Build configuration list for PBXProject "Chrono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BECBFDE1DA3383B00325CDD /* Debug */,
@@ -378,21 +393,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTock" */ = {
+		6BECBFE01DA3383B00325CDD /* Build configuration list for PBXNativeTarget "Chrono" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BECBFE11DA3383B00325CDD /* Debug */,
 				6BECBFE21DA3383B00325CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "TickTockTests" */ = {
+		6BECBFE31DA3383B00325CDD /* Build configuration list for PBXNativeTarget "ChronoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BECBFE41DA3383B00325CDD /* Debug */,
 				6BECBFE51DA3383B00325CDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

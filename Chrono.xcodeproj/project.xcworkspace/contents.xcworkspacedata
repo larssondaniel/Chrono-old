@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TickTock.xcodeproj">
+      location = "self:/Users/daniellarsson/projects/TickTock/TickTock/Chrono.xcodeproj">
    </FileRef>
 </Workspace>

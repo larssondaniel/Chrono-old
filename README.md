@@ -1,12 +1,12 @@
-# TickTock
+# Chrono
 
 ### Usage
 ```objective-c
-[TickTock tick:@"someTask"];
+[Chrono start:@"someTask"];
 
 // Perform task
 
-[TickTock tock:@"someTask"];
+[Chrono stop:@"someTask"];
 ```
 
 ```objective-c
@@ -15,16 +15,16 @@ someTask finished in 135.25 ms
 
 Multiple operations:
 ```objective-c
-[TickTock tick:@"lightTask"];
-[TickTock tick:@"heavyTask"];
+[Chrono start:@"lightTask"];
+[Chrono start:@"heavyTask"];
 
 // Perform task
 
-[TickTock tock:@"lightTask"];
+[Chrono stop:@"lightTask"];
 
 // Perform more tasks
 
-[TickTock tock:@"heavyTask"];
+[Chrono stop:@"heavyTask"];
 ```
 
 ```objective-c

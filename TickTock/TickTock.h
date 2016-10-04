@@ -12,6 +12,6 @@
 
 + (void)tick:(NSString *)operation;
 
-+ (void)tock;
++ (void)tock:(NSString *)operation;
 
 @end

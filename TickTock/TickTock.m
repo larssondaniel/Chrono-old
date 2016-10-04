@@ -10,14 +10,13 @@
 
 @interface TickTock ()
 
-@property (nonatomic) NSDate *startTime;
-@property (nonatomic) NSString *currentOperation;
+@property (nonatomic) NSMutableDictionary *activeOperations;
 
 @end
 
 @implementation TickTock
 
-+ (TickTock*)sharedTickTock
++ (TickTock *)sharedTickTock
 {
     static dispatch_once_t once;
 
@@ -31,14 +30,33 @@
 + (void)tick:(NSString *)operation
 {
     // Operation began
-    [[self sharedTickTock] setCurrentOperation:operation];
-    [[self sharedTickTock] setStartTime:[NSDate date]];
+    if (operation)
+        [[[self sharedTickTock] activeOperations] setObject:[NSDate date] forKey:operation];
 }
 
-+ (void)tock
++ (void)tock:(NSString *)operation
 {
     // Operation has finished
-    NSLog(@"%@ finished in %f ms", [[self sharedTickTock] currentOperation], -[[[self sharedTickTock] startTime] timeIntervalSinceNow] * 1000);
+    NSDate *startTime = [[[self sharedTickTock] activeOperations] objectForKey:operation];
+    if (startTime)
+    {
+        double timePassed = -[startTime timeIntervalSinceNow] * 1000;
+        NSLog(@"%@ finished in %f ms", operation, timePassed);
+    }
+    else
+    {
+        NSLog(@"%@ was never started", operation);
+    }
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        self.activeOperations = [NSMutableDictionary dictionary];
+    }
+    return self;
 }
 
 @end

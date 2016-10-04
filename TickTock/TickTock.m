@@ -41,13 +41,17 @@
     if (startTime)
     {
         double timePassed = -[startTime timeIntervalSinceNow] * 1000;
-        NSLog(@"%@ finished in %f ms", operation, timePassed);
+        NSLog(@"%@ finished in %@", operation, [[self sharedTickTock] printableTime:timePassed]);
+        [[[self sharedTickTock] activeOperations] removeObjectForKey:operation];
     }
     else
     {
         NSLog(@"%@ was never started", operation);
     }
 }
+
+
+#pragma mark - Instance methods
 
 - (instancetype)init
 {
@@ -57,6 +61,26 @@
         self.activeOperations = [NSMutableDictionary dictionary];
     }
     return self;
+}
+
+- (NSString *)printableTime:(double)milliseconds
+{
+    if (milliseconds < 1)
+    {
+        return [NSString stringWithFormat:@"%f µs", milliseconds * 1000];
+    }
+
+    if (milliseconds < 1000)
+    {
+        return [NSString stringWithFormat:@"%f ms", milliseconds];
+    }
+
+    if (milliseconds / 1000 < 60)
+    {
+        return [NSString stringWithFormat:@"%f s", milliseconds / 1000];
+    }
+
+    return nil;
 }
 
 @end

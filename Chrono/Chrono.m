@@ -31,24 +31,50 @@
 {
     // Operation began
     if (operation)
-        [[[self sharedChrono] activeOperations] setObject:[NSDate date] forKey:operation];
+    {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithObject:[NSDate date] forKey:@"start"];
+        [[[self sharedChrono] activeOperations] setObject:dict forKey:operation];
+    }
 }
 
 + (void)stop:(NSString *)operation
 {
     // Operation has finished
     NSDate *currentTime = [NSDate date];
-    NSDate *startTime = [[[self sharedChrono] activeOperations] objectForKey:operation];
+    NSMutableDictionary *timedOperations = [[[self sharedChrono] activeOperations] objectForKey:operation];
+    NSDate *startTime = [timedOperations objectForKey:@"start"];
     if (startTime)
     {
-        double timePassed = [currentTime timeIntervalSinceDate:startTime] * 1000;
-        NSLog(@"%@ finished in %@", operation, [[self sharedChrono] printableTime:timePassed]);
+        NSLog(@"%@ finished in %@", operation, [[self sharedChrono] printableTimeDifference:currentTime since:startTime]);
+
+        NSArray *sortedArray = [timedOperations keysSortedByValueUsingComparator:^NSComparisonResult(NSDate *obj1, NSDate *obj2) {
+            return [obj1 compare:obj2];
+        }];
+
+        for (NSString *key in sortedArray)
+        {
+            if ([key isEqualToString:@"start"])
+                continue;
+
+            NSDate *timeOfSubOperation = [timedOperations valueForKey:key];
+            double relativeTimeSpent = ([timeOfSubOperation timeIntervalSince1970] - [startTime timeIntervalSince1970]) /
+                                       ([currentTime timeIntervalSince1970] - [startTime timeIntervalSince1970]);
+            NSLog(@"%@ - %@ took %@ (%.02f%%)", operation, key, [[self sharedChrono] printableTimeDifference:currentTime since:timeOfSubOperation], relativeTimeSpent * 100);
+        }
+
+
         [[[self sharedChrono] activeOperations] removeObjectForKey:operation];
+        NSLog(@"---------------------------------------------");
     }
     else
     {
         NSLog(@"%@ was never started", operation);
     }
+}
+
++ (void)subOperation:(NSString *)subOperation operation:(NSString *)operation
+{
+    [[[[self sharedChrono] activeOperations] objectForKey:operation] setObject:[NSDate date] forKey:subOperation];
 }
 
 
@@ -64,21 +90,18 @@
     return self;
 }
 
-- (NSString *)printableTime:(double)milliseconds
+- (NSString *)printableTimeDifference:(NSDate *)date1 since:(NSDate *)date2
 {
-    if (milliseconds < 1)
+    double timePassed = [date1 timeIntervalSinceDate:date2] * 1000; //ms
+
+    if (timePassed < 1000)
     {
-        return [NSString stringWithFormat:@"%f µs", milliseconds * 1000];
+        return [NSString stringWithFormat:@"%.02f ms", timePassed];
     }
 
-    if (milliseconds < 1000)
+    if (timePassed / 1000 < 60)
     {
-        return [NSString stringWithFormat:@"%f ms", milliseconds];
-    }
-
-    if (milliseconds / 1000 < 60)
-    {
-        return [NSString stringWithFormat:@"%f s", milliseconds / 1000];
+        return [NSString stringWithFormat:@"%.02f s", timePassed / 1000];
     }
 
     return nil;

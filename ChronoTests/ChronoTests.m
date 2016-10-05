@@ -28,20 +28,24 @@
 - (void)testChrono
 {
     [Chrono start:@"readQRCode"];
-    [Chrono start:@"doMassiveAmountsOfWork"];
+    [Chrono start:@"heavyTask"];
+
+    [Chrono subOperation:@"firstPart" operation:@"heavyTask"];
+    [Chrono subOperation:@"secondPart" operation:@"heavyTask"];
+    [Chrono subOperation:@"thirdPart" operation:@"heavyTask"];
 
     // Do some things
 
     [Chrono stop:@"readQRCode"];
-    [Chrono stop:@"doMassiveAmountsOfWork"];
+    [Chrono stop:@"heavyTask"];
 }
 
 - (void)testThreadedChrono
 {
-    [Chrono start:@"doSomething"];
+    [Chrono start:@"threadedTask"];
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [Chrono stop:@"doSomething"];
+        [Chrono stop:@"threadedTask"];
     });
 }
 

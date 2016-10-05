@@ -14,4 +14,6 @@
 
 + (void)stop:(NSString *)operation;
 
++ (void)subOperation:(NSString *)subOperation operation:(NSString *)operation;
+
 @end

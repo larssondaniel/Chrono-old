@@ -36,5 +36,4 @@ heavyTask finished in 5.90 s
 heavyTask - firstPart took 1.14 s (19.32%)
 heavyTask - secondPart took 1.02 s (17.28%)
 heavyTask - thirdPart took 3.74 s (63.40%)
-
 ```

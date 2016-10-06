@@ -27,17 +27,15 @@
 
 - (void)testChrono
 {
-    [Chrono start:@"readQRCode"];
-    [Chrono start:@"heavyTask"];
+    [Chrono start:@"foo"];
+    sleep(2);
+    [Chrono addEvent:@"firstPart" forOperation:@"foo"];
+    sleep(1);
+    [Chrono addEvent:@"secondPart" forOperation:@"foo"];
+    sleep(1);
+    [Chrono addEvent:@"thirdPart" forOperation:@"foo"];
 
-    [Chrono subOperation:@"firstPart" operation:@"heavyTask"];
-    [Chrono subOperation:@"secondPart" operation:@"heavyTask"];
-    [Chrono subOperation:@"thirdPart" operation:@"heavyTask"];
-
-    // Do some things
-
-    [Chrono stop:@"readQRCode"];
-    [Chrono stop:@"heavyTask"];
+    [Chrono stop:@"foo"];
 }
 
 - (void)testThreadedChrono

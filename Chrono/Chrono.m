@@ -59,7 +59,7 @@
             NSDate *timeOfSubOperation = [timedOperations valueForKey:key];
             double relativeTimeSpent = ([timeOfSubOperation timeIntervalSince1970] - [startTime timeIntervalSince1970]) /
                                        ([currentTime timeIntervalSince1970] - [startTime timeIntervalSince1970]);
-            NSLog(@"%@ - %@ took %@ (%.02f%%)", operation, key, [[self sharedChrono] printableTimeDifference:currentTime since:timeOfSubOperation], relativeTimeSpent * 100);
+            NSLog(@"%@ - %@ at %@ (%.02f%%)", operation, key, [[self sharedChrono] printableTimeDifference:timeOfSubOperation since:startTime], relativeTimeSpent * 100);
         }
 
 
@@ -72,9 +72,17 @@
     }
 }
 
-+ (void)subOperation:(NSString *)subOperation operation:(NSString *)operation
++ (void)addEvent:(NSString *)event forOperation:(NSString *)operation
 {
-    [[[[self sharedChrono] activeOperations] objectForKey:operation] setObject:[NSDate date] forKey:subOperation];
+    NSMutableDictionary *currentEvents = [[[self sharedChrono] activeOperations] objectForKey:operation];
+
+    if (!currentEvents)
+    {
+        [self start:operation];
+    }
+
+    [[[[self sharedChrono] activeOperations] objectForKey:operation] setObject:[NSDate date] forKey:event];
+
 }
 
 

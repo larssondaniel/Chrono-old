@@ -14,6 +14,6 @@
 
 + (void)stop:(NSString *)operation;
 
-+ (void)subOperation:(NSString *)subOperation operation:(NSString *)operation;
++ (void)addEvent:(NSString *)event forOperation:(NSString *)operation;
 
 @end

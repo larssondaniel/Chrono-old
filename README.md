@@ -9,7 +9,7 @@
 [Chrono stop:@"someTask"];
 ```
 
-```objective-c
+```
 someTask finished in 135.25 ms
 ```
 
@@ -29,7 +29,7 @@ Multiple operations:
 [Chrono stop:@"heavyTask"];
 ```
 
-```objective-c
+```
 lightTask finished in 812.55 µs
 ---------------------------------------------
 heavyTask finished in 5.90 s

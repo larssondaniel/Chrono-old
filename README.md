@@ -1,6 +1,11 @@
 # Chrono
 
-### Usage
+`Chrono` is a lightweight and easy-to-use timer for profiling processes on iOS.
+
+## Usage
+
+Create timers on the fly and stop them whenever you are finished with what is being profiled.
+
 ```objective-c
 [Chrono start:@"someTask"];
 
@@ -8,12 +13,12 @@
 
 [Chrono stop:@"someTask"];
 ```
-
+console:
 ```
 someTask finished in 135.25 ms
 ```
 
-Multiple operations:
+####Multiple operations & operations split up into pieces:
 ```objective-c
 [Chrono start:@"lightTask"];
 [Chrono start:@"heavyTask"];
@@ -28,9 +33,9 @@ Multiple operations:
 [Chrono stop:@"lightTask"];
 [Chrono stop:@"heavyTask"];
 ```
-
+console:
 ```
-lightTask finished in 812.55 µs
+lightTask finished in 82.55 ms
 ---------------------------------------------
 heavyTask finished in 5.90 s
 heavyTask - firstPart took 1.14 s (19.32%)

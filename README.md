@@ -18,16 +18,23 @@ Multiple operations:
 [Chrono start:@"lightTask"];
 [Chrono start:@"heavyTask"];
 
-// Perform task
+// Do work
+[Chrono subOperation:@"firstPart" operation:@"heavyTask"];
+// Do work
+[Chrono subOperation:@"secondPart" operation:@"heavyTask"];
+// Do work
+[Chrono subOperation:@"thirdPart" operation:@"heavyTask"];
 
 [Chrono stop:@"lightTask"];
-
-// Perform more tasks
-
 [Chrono stop:@"heavyTask"];
 ```
 
 ```objective-c
 lightTask finished in 812.55 µs
-heavyTask finished in 3.94 s
+---------------------------------------------
+heavyTask finished in 5.90 s
+heavyTask - firstPart took 1.14 s (19.32%)
+heavyTask - secondPart took 1.02 s (17.28%)
+heavyTask - thirdPart took 3.74 s (63.40%)
+
 ```

@@ -1,0 +1,22 @@
+{
+  "name": "Chrono",
+  "version": "0.1.0",
+  "summary": "Chrono is a lightweight and easy-to-use timer for profiling code on iOS.",
+  "description": "Chrono is a tool aimed at profiling the time certain operations in your code takes.",
+  "homepage": "https://github.com/larssondaniel/Chrono",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Daniel Larsson": "hello@larssondaniel.com"
+  },
+  "source": {
+    "git": "https://github.com/larssondaniel/Chrono.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Chrono/Classes/*"
+}

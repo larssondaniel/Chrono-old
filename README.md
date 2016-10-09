@@ -18,25 +18,29 @@ console:
 someTask finished in 135.25 ms
 ```
 
-#### Events within operations:
+#### Multiple operations & operations split up into pieces:
 ```objective-c
+[Chrono start:@"lightTask"];
 [Chrono start:@"heavyTask"];
 
 // Do work
-[Chrono addEvent:@"loaded" forOperation:@"heavyTask"];
+[Chrono subOperation:@"firstPart" operation:@"heavyTask"];
 // Do work
-[Chrono addEvent:@"gotResult" forOperation:@"heavyTask"];
+[Chrono subOperation:@"secondPart" operation:@"heavyTask"];
 // Do work
-[Chrono addEvent:@"manipulatedResult" forOperation:@"heavyTask"];
+[Chrono subOperation:@"thirdPart" operation:@"heavyTask"];
 
+[Chrono stop:@"lightTask"];
 [Chrono stop:@"heavyTask"];
 ```
 console:
 ```
+lightTask finished in 82.55 ms
+---------------------------------------------
 heavyTask finished in 5.90 s
-heavyTask - loaded at 1.05 s (17.79%)
-heavyTask - gotResult at 3.02 s (51.18%)
-heavyTask - manipulatedResult at 5.74 s (97.28%)
+heavyTask - firstPart took 1.14 s (19.32%)
+heavyTask - secondPart took 1.02 s (17.28%)
+heavyTask - thirdPart took 3.74 s (63.40%)
 ```
 
 ## Contributing

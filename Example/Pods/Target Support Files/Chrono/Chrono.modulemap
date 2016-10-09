@@ -1,0 +1,6 @@
+framework module Chrono {
+  umbrella header "Chrono-umbrella.h"
+
+  export *
+  module * { export * }
+}
